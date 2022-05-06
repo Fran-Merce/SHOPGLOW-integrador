@@ -225,6 +225,10 @@ border-bottom:  1px solid greenyellow;
   .col-2{
     display: none;
   }
+  .main{
+    height: auto;
+    min-height: 100vh;
+  }
 }
 
 @media only screen and (max-width: 525px){

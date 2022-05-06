@@ -2,35 +2,35 @@ export const products = [
   {
     id: 1,
     name: "Buzo",
-    price: 250,
+    price: 6250,
     url: "/assets/imgs/products/buzo4.png",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
   {
     id: 2,
     name: "Remera",
     price: 2350,
-    url: "/assets/imgs/products/remera5.webp",
+    url: "/assets/imgs/products/remera7.png",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"unisex"
   },
   {
     id: 3,
     name: "Remera",
-    price: 250,
+    price: 4250,
     url: "/assets/imgs/products/remera2.png",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
   {
     id: 4,
     name: "Campera",
     price: 3850,
-    url: "/assets/imgs/products/campera4.png",
+    url: "/assets/imgs/products/campera5.jfif",
     category: "camperas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"mujer"
   },
   {
@@ -39,7 +39,7 @@ export const products = [
     price: 2850,
     url: "/assets/imgs/products/campera2.png",
     category: "camperas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"hombre"
   },
   {
@@ -48,7 +48,7 @@ export const products = [
     price: 14850,
     url: "/assets/imgs/products/campera4.png",
     category: "camperas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"unisex"
   },
   {
@@ -57,34 +57,26 @@ export const products = [
     price: 2850,
     url: "/assets/imgs/products/campera4.png",
     category: "camperas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"unisex"
   },
-  {
-    id: 8,
-    name: "Campera",
-    price: 7250,
-    url: "/assets/imgs/products/campera4.png",
-    category: "camperas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
-    gender:"unisex"
-  },
+  
   {
     id: 9,
     name: "Remera",
     price: 12250,
-    url: "/assets/imgs/products/remera1.png",
+    url: "/assets/imgs/products/remera6.png",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"hombre"
   },
   {
     id: 10,
     name: "Buzo",
-    price: 250,
-    url: "/assets/imgs/products/buzo2.png",
+    price: 1550,
+    url: "/assets/imgs/products/buzo7.png",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"unisex" 
   },
   {
@@ -93,7 +85,7 @@ export const products = [
     price: 5500,
     url: "/assets/imgs/products/remera1.png",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"unisex"
   },
   {
@@ -102,16 +94,16 @@ export const products = [
     price: 2850,
     url: "/assets/imgs/products/buzo3.png",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"unisex"
   },
   {
     id: 13,
     name: "Remera",
-    price: 250,
+    price: 3250,
     url: "/assets/imgs/products/remera5.webp",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
   {
     id: 14,
@@ -119,16 +111,16 @@ export const products = [
     price: 4050,
     url: "/assets/imgs/products/buzo5.webp",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'mujer'
   },
   {
     id: 15,
     name: "Buzo",
-    price: 250,
+    price: 1250,
     url: "/assets/imgs/products/buzo5.webp",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
   {
     id: 16,
@@ -136,7 +128,7 @@ export const products = [
     price: 2500,
     url: "/assets/imgs/products/remera.png",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'mujer'
   },
   {
@@ -145,7 +137,7 @@ export const products = [
     price: 6250,
     url: "/assets/imgs/products/remera4.webp",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'mujer'
   },
   {
@@ -154,7 +146,7 @@ export const products = [
     price: 4050,
     url: "/assets/imgs/products/remera2.png",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'unisex'
   },
   {
@@ -163,7 +155,7 @@ export const products = [
     price: 5500,
     url: "/assets/imgs/products/remera5.webp",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'hombre'
   },
   {
@@ -172,7 +164,7 @@ export const products = [
     price: 7850,
     url: "/assets/imgs/products/campera3.webp",
     category: "camperas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'mujer'
   },
   {
@@ -181,45 +173,36 @@ export const products = [
     price: 6250,
     url: "/assets/imgs/products/buzo2.png",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'unisex'
   },
-  {
-    id: 22,
-    name: "Buzo",
-    price: 4050,
-    url: "/assets/imgs/products/buzo2.png",
-    category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
-    gender:'unisex'
-  },
+  
   {
     id: 23,
     name: "Buzo",
     price: 5500,
     url: "/assets/imgs/products/buzo1.webp",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:'unisex'
   },
   {
     id: 24,
-    name: "Remera",
+    name: "Buzo",
     price: 2500,
-    url: "/assets/imgs/products/remera5.webp",
-    category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
-    gender:'unisex'
+    url: "/assets/imgs/products/buzo6.png",
+    category: "buzos",
+    gender:'hombre'
   },
 ];
 export const popularProducts= [
   {
     id: 1,
     name: "Buzo",
-    price: 250,
+    price: 7250,
     url: "/assets/imgs/products/buzo4.png",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
   {
     id: 2,
@@ -227,16 +210,16 @@ export const popularProducts= [
     price: 2350,
     url: "/assets/imgs/products/remera5.webp",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
     gender:"unisex"
   },
   {
     id: 3,
     name: "Remera",
-    price: 250,
+    price: 3250,
     url: "/assets/imgs/products/remera2.png",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
 ];
 
@@ -244,27 +227,27 @@ export const offersProducts = [
   {
     id: 15,
     name: "Buzo",
-    price: 250,
+    price: 2250,
     url: "/assets/imgs/products/buzo5.webp",
     category: "buzos",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
   {
     id: 13,
     name: "Remera",
-    price: 250,
+    price: 2250,
     url: "/assets/imgs/products/remera5.webp",
     category: "remeras",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
   {
     id: 10,
     name: "Buzo",
-    price: 250,
-    url: "/assets/imgs/products/buzo2.png",
+    price: 2250,
+    url: "/assets/imgs/products/buzo7.png",
     category: "buzos",
     gender:"unisex",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli",
+    
   },
 
 ];

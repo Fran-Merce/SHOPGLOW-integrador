@@ -35,6 +35,7 @@ const filterProducts = () => {
   const selectCategory = document.querySelector("#productsFilterCategory").value;
   const selectFilterPrice = document.querySelector("#productsFilterPrice").value;
   const selectFilterGender = document.querySelector("#productsFilterByGender").value;
+  console.log(selectFilterGender)
   productsFiltered = [...filterCategory(productsFiltered, selectCategory)];
   productsFiltered = [...filterPrice(productsFiltered, selectFilterPrice)];
   productsFiltered=[...filterProductsByGender(selectFilterGender,productsFiltered)]
@@ -61,7 +62,7 @@ const init = () => {
   ? localStorage.getItem("category").toLocaleLowerCase() 
   : "all";
   document.querySelector(`#productsFilterCategory`).value = category.toLowerCase()
-  displayProducts(filterCategory(products,category), "cardProduct","xl", productContainer);
+  filterProducts()
 }
 filterSelects.forEach(select => select.addEventListener("change", filterProducts));
 
