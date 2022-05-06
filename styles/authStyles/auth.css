@@ -31,7 +31,8 @@ p {
   align-items: center;
   justify-content: center;
   background: rgba(157, 157, 157, 0) ;
-  padding: 1rem;
+
+
 }
 
 .blur-container {
@@ -43,7 +44,7 @@ p {
   justify-content: center;
   backdrop-filter: blur(30px);
   background-color: rgba(0, 0, 0, 0.771);
-
+  padding: 2rem 0rem;
 }
 
 .col-1 {
@@ -219,7 +220,7 @@ border-bottom:  1px solid greenyellow;
 @media only screen and (max-width: 725px){
   .hero-container{
     width: 80%;
-    min-height: 75vh;
+    min-height: 85vh;
   }
   .col-2{
     display: none;
@@ -229,7 +230,7 @@ border-bottom:  1px solid greenyellow;
 @media only screen and (max-width: 525px){
   .hero-container{
     width: 95%;
-    min-height: 80vh;
+    min-height: 90vh;
   }
   .col-2{
     display: none;
