@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="/styles/authStyles/auth.css" />
+    <link rel="stylesheet" href="/styles/authStyles/register.css" />
+    <link rel="shortcut icon" href="/assets/imgs/logo-faviicon.ico" type="image/x-icon">
+    <title>Register</title>
+  </head>
+  <body>
+    <header>
+    
+    </header>
+    <main class="main">
+      <div class="hero-container">
+        <div class="blur-container">
+          <div class="col-1">
+            <div class="auth__title-container">
+              <h1 class="hero-title">Registrar</h1>
+            </div>
+            <form id="register" class="auth-form">
+              <input
+                class="auth__input"
+                type="text"
+                name="username"
+                placeholder="Nombre de Usuario"
+                autocomplete="off"
+                id="user"
+              
+              />
+              <p class="auth__input--error-text"></p>
+              <input
+                class="auth__input"
+                type="text"
+                name="email"
+                placeholder="Email"
+                autocomplete="off"
+                id="email"
+                
+              />
+              <p class="auth__input--error-text"></p>
+              <input
+                class="auth__input"
+                type="password"
+                name="password"
+                placeholder="Contraseña"
+                autocomplete="off"
+                id="password"
+              
+              />
+              <p class="auth__input--error-text"></p>
+              <input
+                class="auth__input"
+                type="password"
+                name="password2"
+                placeholder="Confirmar contraseña"
+                autocomplete="off"
+                id="password2"
+              
+              />
+              <p class="auth__input--error-text">error</p>
+              <button disabled type="submit" id="submitBtn" class="btn-auth btn-disabled">Registrarse</button>
+            </form>
+            <div class="auth__help">
+              <a href="/pages/login.html">Ya tengo Cuenta</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </main>
+    <footer class="footer">
+  </footer>
+    <script type="module" src="../scripts/register.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

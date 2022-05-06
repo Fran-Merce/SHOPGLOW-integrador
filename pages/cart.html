@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/imgs/logo-faviicon.ico"
+      type="image/x-icon"
+    />
+    <title>Carrito</title>
+
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="/index.html" class="nav__logo-cont">
+          <img
+            src="/assets/imgs/logo.svg"
+            class="nav__logo-img"
+            href="/index.html"
+          />
+        </a>
+        <ul id="navUl" class="nav__ul--links">
+          <i class="bx bx-x-circle" id="menuNavMobileClose"></i>
+          <li class="">
+            <a href="./products.html">Productos</a>
+          </li>
+          <li class="">
+            <a href="/index.html" >Home</a>
+          </li>
+          <li class="" id="cartLink">
+            <i class="bx bx-cart"></i>
+          </li>
+          <li class="" id="logoutBtn">
+            <i id class="bx bxs-log-out"></i>
+          </li>
+        </ul>
+        <i class="bx bx-menu menuNavMobile" id="menuNavMobile"></i>
+      </nav>
+    </header>
+    <main data-aos="fade-right" class="main__wrapper-cart">
+      <div class="main__container">
+        <div class="cart__col1">
+          <div class="cart__col1__header">
+            <h1>Carrito de compras</h1>
+          </div>
+          <div
+            data-aos="fade-right"
+            id="cartBody"
+            class="cart1__col1__body"
+          ></div>
+          <footer class="cart__col1__footer" id="cartFooter">
+            <div class="">
+              <button class="cart__col1__footer__btn" id="button-checkout">
+                <div class="hover">
+                  <img src="/assets/imgs/output-onlinegiftools.gif" alt="" />
+                  <p>ir</p>
+                </div>
+                Ir Al Pago
+              </button>
+            </div>
+            <div class="cart__col1__total-price">
+              <h2>SubTotal: <span id="totalPrice">$0</span></h2>
+            </div>
+            <div class="">
+              <div class="cart__col1__footer__btn" id="button-back">
+                <div id="dub-arrow">
+                  <img src="/assets/imgs/down-arrow.gif" alt="" />
+                </div>
+                <p href="#">Volver Atras!</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__gmail">
+        <i class="bx bxs-envelope"></i>
+        Franmerce1@gmail.com
+      </p>
+      <p class="footer__text copy">&copy; 2022 Francisco Merce | For Nucba</p>
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/francisco-jes%C3%BAs-merc%C3%AA-a607b021a/"
+        >
+          <span class="bx bxl-linkedin"></span>
+        </a>
+        <a href="https://github.com/Fran-Merce/intragrador-js" target="_blank">
+          <span class="bx bxl-github"></span>
+        </a>
+        <a href="" target="_blank">
+          <span class="bx bxl-instagram"></span>
+        </a>
+      </div>
+    </footer>
+    <script type="module" src="../scripts/cartPage.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+.cardProduct-img-wrapper{
+  width: 75%;
+  margin: 0 auto;
+  height: 65%;
+  text-align: center;
+
+}
+
+.cardProduct {
+  position: relative;
+  width: 19rem;
+  height: 28rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 2rem;
+  object-fit: cover;
+  gap: .5rem;
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.cardProduct::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: -15px;
+  background-color: #fff;
+  transition: 0.3s top;
+}
+.cardProduct::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  right: 0;
+  bottom: -15px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s bottom;
+}
+.cardProduct:hover:before {
+  bottom: 1px;
+}
+.cardProduct:hover::after {
+  top: 1px;
+}
+.cardProduct__img {
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  object-fit: cover;
+}
+.cardProduct__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+  
+}
+
+.cardProduct__text {
+  padding: 0 .5rem;
+  font-size: 1.2rem;
+  font-family:'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: start;
+}
+
+.cardProduct__size{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardProduct__size div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:32px;
+  height: 32px;
+  border: 1px solid #000;
+  border-radius: 50% ;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.cardProduct__size div p{
+  font-family: 'Poppins', sans-serif;
+  border-radius: 50% ;
+}
+
+/* ------------------------------- */
+.categories__card {
+  position: relative;
+  width: 17rem;
+  height: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: "Assistant", sans-serif;
+  background: #fff;
+  background-image: url(/assets/imgs/categoriesCardBg.png);
+  transition: 0.3s transform;
+}
+.categories__card img {
+  width: 90%;
+  height: 80%;
+}
+
+.categories__card:hover {
+  transform: translateY(-2rem);
+  transition: 0.3s transform;
+}
+.categories__card::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.42);
+  transition: 0.3s width;
+  left: 0;
+}
+.categories__card:hover::after {
+  width: 100%;
+}
+.categories__card:nth-child(2) {
+  margin-bottom: 2rem;
+}
+.talle {
+  margin-top: 1rem;
+}
+img.xl{
+  width: 100%;
+  height: 100%;
+  
+}
+.size-wrapper .size-item--selected{
+
+  background-color:#00ff00;
+}

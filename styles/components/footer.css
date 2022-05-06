@@ -1,0 +1,64 @@
+.footer{
+  width: 100%;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  font-family: "Bebas Neue","Poppins", sans-serif, cursive;
+  font-size: 1.1rem;
+}
+
+.footer img{
+  width: 10%;
+}
+.copy::after{
+  content: ' \2764';
+  color: rgb(255, 0, 0);
+}
+
+.footer__social{
+  font-size: 1.5rem;
+}
+.footer__social span{
+  cursor: pointer;
+  margin: 0 .2rem;
+}
+.bxl-instagram,
+.bxl-linkedin,
+.bxl-github{
+  color: #000;
+  font-size: 2rem;
+}
+.bxl-instagram:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d);
+}
+
+.bxl-linkedin:hover {
+  color: #0a66c2;
+}
+
+.bxl-github:hover{
+  color: #444444;
+}
+
+
+.bxl-linkedin:visited{
+  color: #000;
+}
+
+
+
+
+@media only screen and (max-width: 625px) {
+  .footer{
+    flex-direction: column;
+  }
+}

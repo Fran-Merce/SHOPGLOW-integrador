@@ -1,0 +1,12 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "Integrador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass":"node-sass --watch src/sass/style.scss:src/css/style.css"
+  },
+  "author": "Fran SkyKru",
+  "license": "ISC"
+}

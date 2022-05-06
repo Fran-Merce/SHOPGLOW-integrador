@@ -1,0 +1,128 @@
+
+header .nav{
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  
+}
+.nav__logo-cont{
+  width: 64px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.nav__logo-img{
+  width: 100%;
+  height: auto;
+}
+.nav__ul--links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__ul--links li{
+  list-style: none;
+  font-size: 1.2rem;
+  margin: 0 .5rem;
+  color: #fff;
+  font-family: 'IBM Plex Serif', serif;  
+}
+.nav__ul--links a{
+  color:#fff;
+}
+
+.nav__ul--links{
+  margin: 0 1.5rem;
+}
+
+.nav__logo:visited{
+  color: rgb(255, 255, 255);
+}
+
+
+.nav__ul--links li svg{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+ul.activeNav{
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.926);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  top: 0;
+  right: 0;
+  margin: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: scale(1);
+  transition: .3s all;
+}
+
+
+
+
+.activeNav li {
+  font-size: 2.5rem;
+}
+.nav i{
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+.nav a{
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.nav a:hover,
+.nav i:hover{
+  color: rgb(188, 188, 188);
+}
+.activeNav .nav-li{
+  display: block;
+}
+.bx-menu{
+  font-size: 4rem;
+}
+
+.bxs-log-out{
+  transform: rotate(180deg);
+}
+#menuNavMobileClose,
+i.menuNavMobile{
+  font-size: 2rem;
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 525px){
+  .nav{
+    position: relative;
+  }
+
+  .nav__ul--links{
+    transform: scale(0);
+    transform-origin: bottom;
+  }
+  #menuNavMobileClose,
+  i.menuNavMobile{
+    display: inline-block;
+  font-size: 3rem;
+  }
+  .nav__ul--links{
+    width: 10%;
+  }
+}
