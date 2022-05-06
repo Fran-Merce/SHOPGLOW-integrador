@@ -1,93 +1,121 @@
 <!DOCTYPE html>
 <html lang="eS">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/imgs/logo-faviicon.ico"
+      type="image/x-icon"
+    />
+    <title>Productos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="../styles/main.css" />
-  <link rel="shortcut icon" href="/assets/imgs/logo-faviicon.ico" type="image/x-icon">
-  <title>Productos</title>
-</head>
+  <body>
+    <div class="main-wrapper">
+      <header>
+        <nav class="nav">
+          <a href="/index.html" class="nav__logo-cont">
+            <img
+              src="/assets/imgs/logo.svg"
+              class="nav__logo-img"
+              href="/index.html"
+            />
+          </a>
+          <ul id="navUl" class="nav__ul--links">
+            <i class="bx bx-x-circle" id="menuNavMobileClose"></i>
 
-<body>
-  <div class="main-wrapper">
-    <header>
-      <nav class="nav">
-        <a href="/index.html" class="nav__logo-cont">
-          <img src="/assets/imgs/logo.svg" class="nav__logo-img" href="/index.html">
-        </a>
-        <ul id="navUl" class="nav__ul--links">
-          <i class="bx bx-x-circle" id="menuNavMobileClose"></i>
-
-          <li class="">
-            <a href="/index.html">Home</a>
-          </li>
-          <li class="" id="cartLink">
-            <i class="bx bx-cart"></i>
-          </li>
-          <li class="" id="logoutBtn">
-            <i id class="bx bxs-log-out"></i>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main data-aos="fade-right" class="main-products">
-      <div class="main__container">
-        <div class="products__filter-container" id="productsFilterContainer">
-          <div data-aos="fade-right" class="filter-container-bg">
-            <select name="category" class="filter__select" id="productsFilterCategory">
-              <option value="all">Todos</option>
-              <option value="buzos">Buzos</option>
-              <option value="remeras">Remeras</option>
-              <option value="camperas">Camperas</option>
-            </select>
-            <select name="price" class="filter__select" id="productsFilterPrice">
-              <option value="999999">Precio</option>
-              <option value="5000">Menores de $5000</option>
-              <option value="7000">Menores de $7000</option>
-              <option value="10000">Menores de $10000</option>
-              <option value="15000">Menores de $15000</option>
-
-            </select>
-            <select name="" class="filter__select" id="productsFilterSort">
-              <option value="">Ordenar</option>
-              <option value="low">Menor a mayor</option>
-              <option value="hight">Mayor a menor</option>
-            </select>
-            <select name="" class="filter__select" id="productsFilterByGender">
-              <option value="unisex">Unisex</option>
-              <option value="hombre">Hombre</option>
-              <option value="mujer">mujer</option>
-            </select>
+            <li class="">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="" id="cartLink">
+              <i class="bx bx-cart"></i>
+            </li>
+            <li class="" id="logoutBtn">
+              <i id class="bx bxs-log-out"></i>
+            </li>
+          </ul>
+          <i class="bx bx-menu menuNavMobile" id="menuNavMobile"></i>
+        </nav>
+      </header>
+      <main data-aos="fade-right" class="main-products">
+        <div class="main__container">
+          <div class="products__filter-container" id="productsFilterContainer">
+            <div data-aos="fade-right" class="filter-container-bg">
+              <select
+                name="category"
+                class="filter__select"
+                id="productsFilterCategory"
+              >
+                <option value="all">Todos</option>
+                <option value="buzos">Buzos</option>
+                <option value="remeras">Remeras</option>
+                <option value="camperas">Camperas</option>
+              </select>
+              <select
+                name="price"
+                class="filter__select"
+                id="productsFilterPrice"
+              >
+                <option value="999999">Precio</option>
+                <option value="5000">Menores de $5000</option>
+                <option value="7000">Menores de $7000</option>
+                <option value="10000">Menores de $10000</option>
+                <option value="15000">Menores de $15000</option>
+              </select>
+              <select name="" class="filter__select" id="productsFilterSort">
+                <option value="">Ordenar</option>
+                <option value="low">Menor a mayor</option>
+                <option value="hight">Mayor a menor</option>
+              </select>
+              <select
+                name=""
+                class="filter__select"
+                id="productsFilterByGender"
+              >
+                <option value="unisex">Unisex</option>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">mujer</option>
+              </select>
+            </div>
           </div>
+          <div class="products__container" id="productsContainer"></div>
         </div>
-        <div class="products__container" id="productsContainer"></div>
-      </div>
-    </main>
-
-  </div>
-  <footer class="footer">
-    <p class="footer__gmai"> <i class="fa-regular fa-envelope"></i> Franmerce1@gmail.com</p>
-    <p class="footer__text copy">&copy; 2022 Francisco Merce | For Nucba</p>
-    <div class="footer__social">
-      <a href="https://www.linkedin.com/in/francisco-jes%C3%BAs-merc%C3%AA-a607b021a/" target="_blank">
-        <span class="bx bxl-linkedin"></span>
-      </a>
-      <a href="https://github.com/Fran-Merce/SHOPGLOW-integrador" target="_blank">
-        <span class="bx bxl-github"></span>
-      </a>
-      <a href="#">
-        <span class="bx bxl-instagram"></span>
-      </a>
+      </main>
     </div>
-  </footer>
-  <script type="module" src="../scripts/productsPage.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-</body>
-
+    <footer class="footer">
+      <p class="footer__gmail">
+        <i class='bx bxs-envelope'></i>
+        Franmerce1@gmail.com
+      </p>
+      <p class="footer__text copy">&copy; 2022 Francisco Merce | For Nucba</p>
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/francisco-jes%C3%BAs-merc%C3%AA-a607b021a/"
+          target="_blank"
+        >
+          <span class="bx bxl-linkedin"></span>
+        </a>
+        <a
+          href="https://github.com/Fran-Merce/SHOPGLOW-integrador"
+          target="_blank"
+        >
+          <span class="bx bxl-github"></span>
+        </a>
+        <a href="#">
+          <span class="bx bxl-instagram"></span>
+        </a>
+      </div>
+    </footer>
+    <script type="module" src="../scripts/productsPage.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>

@@ -3,7 +3,8 @@ import { displayProducts } from "./cards.js";
 const productContainer = document.querySelector("#productsContainer");
 const filterSelects = document.querySelectorAll(".filter__select");
 const logoutBtn = document.getElementById("logoutBtn");
-
+const menuNavMobileClose = document.querySelector('#menuNavMobileClose');
+const menuNav = document.querySelector('#menuNavMobile');
 
 // Filter Invidual Functions
 
@@ -62,17 +63,25 @@ const init = () => {
   document.querySelector(`#productsFilterCategory`).value = category.toLowerCase()
   displayProducts(filterCategory(products,category), "cardProduct","xl", productContainer);
 }
-
 filterSelects.forEach(select => select.addEventListener("change", filterProducts));
-cartLink.addEventListener("click",()=>   window.location.href=`/pages/cart.html`)
-document.addEventListener("DOMContentLoaded", init);
+
+
+
+
 
   
 !localStorage.getItem('isLogged') && window.location.replace('./register.html')
 localStorage.getItem('isLogged') ==='false' && window.location.replace('./login.html')
+cartLink.addEventListener("click",()=>   window.location.href=`/pages/cart.html`)
+menuNav.addEventListener('click', () => navUl.classList.add('activeNav'))
+menuNavMobileClose.addEventListener('click', () =>  navUl.classList.remove('activeNav'))
+
+document.addEventListener("DOMContentLoaded", init);
 
 logoutBtn.addEventListener("click", () => {
   localStorage.setItem("isLogged", false);
-  window.location.replace = "./login.html";
+  window.location.replace ("./login.html")
 })
 AOS.init();
+
+

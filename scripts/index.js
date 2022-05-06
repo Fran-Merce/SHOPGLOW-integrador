@@ -8,6 +8,7 @@ const menuNavMobileClose = document.querySelector('#menuNavMobileClose');
 const menuNav = document.querySelector('#menuNavMobile');
 const cartLink=document.querySelector("#cartLink")
 const btnRedirectProducts=document.querySelectorAll('.btn-redirect-products')
+const logoutBtn = document.getElementById("logoutBtn");
 
 !localStorage.getItem('isLogged') && window.location.replace('./pages/register.html')
 localStorage.getItem('isLogged') ==='false' && window.location.replace('./pages/login.html')
@@ -19,9 +20,6 @@ menuNavMobileClose.addEventListener('click', () =>  navUl.classList.remove('acti
 
 
 
-displayProducts(popularProducts,'cardProduct','',popularProductsContainer)
-displayProducts(offersProducts,'cardProduct','',offerProductsCont)
-
 
 
 btnRedirectProducts.forEach(btn=>{
@@ -32,9 +30,11 @@ btnRedirectProducts.forEach(btn=>{
 })
 
 displayCategories(categories)
-const logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", () => {
   localStorage.setItem("isLogged", false);
-  window.location.replace = "./pages/login.html";
+  window.location.replace ("./pages/login.html")
 })
+
+displayProducts(popularProducts,'cardProduct','',popularProductsContainer)
+displayProducts(offersProducts,'cardProduct','',offerProductsCont)
 AOS.init();
