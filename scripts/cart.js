@@ -100,7 +100,6 @@ const handlequantity = e => {
       ? handleDeleteAlert(e,productSelected)
       : productSelected.quantity--;
     }
-
   productSelected.totalPrice = productSelected.price * productSelected.quantity;
   quantityValue.innerHTML = productSelected.quantity;
   localStorage.setItem("cart", JSON.stringify(cart));
@@ -114,13 +113,7 @@ const totalPriceCalc = () => {
   const totalPrice = document.querySelector("#totalPrice");
   let total = 0;
   if (cart.length !== 0) {
-
-    cart.forEach(product => {
-      total += product.price * product.quantity
-      console.log('price',product.price)
-      console.log('totalPrice',product.totalPrice)
-      console.log('total',total)
-    });
+    cart.forEach(product => total += product.price * product.quantity);
     totalPrice.innerHTML = new Intl.NumberFormat("es-ES", {style: "currency",currency: "ARS",}).format(total);
   }else {
     totalPrice.innerHTML = new Intl.NumberFormat("es-ES", {  style: "currency",  currency: "ARS",}).format(total);
