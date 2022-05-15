@@ -22,14 +22,12 @@ export const handleDeleteAlert = (e,productIdCart) => {
   ).then((result) => {
     if (result.isConfirmed) {
       handleDelete(e);
-    
       Swal.fire(defaultAlert('Eliminado!', '', 'swal-custom-class','success'))
     }
   });
 };
 
 export const defaultAlert = (title, text, className,icon) => {
-  console.log(className)
   return{
     title: title,
     text: text,
@@ -42,7 +40,6 @@ export const defaultAlert = (title, text, className,icon) => {
       actions: className,
       confirmButton: className,
       cancelButton: className,
-      
     },
   };
 } 
