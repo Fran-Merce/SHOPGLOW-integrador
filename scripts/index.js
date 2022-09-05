@@ -10,6 +10,8 @@ const cartLink=document.querySelector("#cartLink")
 const btnRedirectProducts=document.querySelectorAll('.btn-redirect-products')
 const logoutBtn = document.getElementById("logoutBtn");
 
+!localStorage.getItem('isLogged') && window.location.replace('./pages/register.html')
+localStorage.getItem('isLogged') ==='false' && window.location.replace('./pages/login.html')
 
 
 
